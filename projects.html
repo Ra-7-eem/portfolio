@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Full portfolio of Software Engineer Raheem Darweesh — Comprehensive showcase of all web projects, e-commerce stores, and landing pages with live previews." />
+  <title>Full Portfolio | Raheem Darweesh</title>
+  <link rel="icon" type="image/jpeg" href="favicon.png" />
+  <link rel="icon" href="assets/images/developer_avatar.jpg" type="image/jpeg" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono & Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="page-loader" id="page-loader" role="status" aria-live="polite">
+    <div class="page-loader-orbit" aria-hidden="true"></div>
+    <div class="page-loader-mark"><img src="favicon.png" alt="Raheem Darweesh logo" /></div>
+    <span class="page-loader-status" data-i18n="loader_status">Initializing...</span>
+  </div>
+
+  <!-- ============================  NAVBAR  ============================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" dir="ltr">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-slash"> /</span>
+        <span class="logo-name">RD</span>
+        <span class="logo-bracket">&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about" class="nav-link"><span class="nav-num">01.</span> <span
+              data-i18n="nav_about">عني</span></a></li>
+        <li><a href="index.html#services" class="nav-link"><span class="nav-num">02.</span> <span
+              data-i18n="nav_services">خدماتي</span></a></li>
+        <li><a href="index.html#portfolio" class="nav-link"><span class="nav-num">03.</span> <span
+              data-i18n="nav_portfolio">أعمالي</span></a></li>
+        <li><a href="index.html#testimonials" class="nav-link"><span class="nav-num">04.</span> <span
+              data-i18n="nav_testimonials">آراء العملاء</span></a></li>
+        <li><a href="index.html#contact" class="nav-link nav-link-cta" data-i18n="nav_contact">تواصل معي</a></li>
+      </ul>
+
+      <!-- Controls: Language + Hamburger -->
+      <div class="nav-controls">
+        <!-- Language Toggle -->
+        <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language" title="تغيير اللغة / Switch Language">
+          <svg class="lang-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span id="lang-label">العربية</span>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================  PROJECTS PAGE HEADER  ============================ -->
+  <header class="projects-page-hero">
+    <div class="container">
+      <div class="projects-hero-top">
+        <a href="index.html" class="back-home-btn">
+          <span class="back-arrow">←</span>
+          <span data-i18n="back_to_home_text">العودة للرئيسية</span>
+        </a>
+      </div>
+      <div class="section-header" style="margin-bottom: 2.2rem;">
+        <span class="section-tag">// 03. all_portfolio_showcase</span>
+        <h1 class="section-title"><span data-i18n="projects_page_title1">أعمال تروي</span> <span class="accent-text"
+            data-i18n="projects_page_title2">قصص التميّز والنجاح</span></h1>
+        <p class="section-subtitle" data-i18n="projects_page_subtitle">جولة في أبرز المشاريع والحلول الرقمية التي بنيتها بأعلى معايير هندسة البرمجيات لتحقيق نتائج استثنائية لعملائي</p>
+      </div>
+
+      <!-- Portfolio Category Filter Tabs -->
+      <div class="portfolio-filter-wrapper">
+        <button class="portfolio-filter-btn active" data-filter="all" data-i18n="filter_all">الكل</button>
+        <button class="portfolio-filter-btn" data-filter="landing" data-i18n="filter_landing">مواقع وصفحات هبوط</button>
+        <button class="portfolio-filter-btn" data-filter="webapps" data-i18n="filter_webapps">تطبيقات ويب ولوحات تحكم</button>
+        <button class="portfolio-filter-btn" data-filter="ecommerce" data-i18n="filter_ecommerce">متاجر وكتالوجات</button>
+        <button class="portfolio-filter-btn" data-filter="corporate" data-i18n="filter_corporate">شركات ومؤسسات</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================  PROJECTS GRID  ============================ -->
+  <main class="section" style="padding-top: 0; padding-bottom: 5rem;">
+    <div class="container">
+
+      <div class="portfolio-grid" id="projectsGrid">
+
+        <!-- 1. Adeem Light -->
+        <article class="project-card" data-category="landing ecommerce" id="project-adeem">
+          <div class="project-img-wrapper">
+            <img src="Projects/adeem-light.png" alt="Adeem Light" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://ra-7-eem.github.io/adeem-light/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_adeem_badge">متجر إلكتروني وتوزيع إضاءة</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_adeem_title">متجر أديم لايت | Adeem Light</h3>
+            <p class="project-desc" data-i18n="p_adeem_desc">متجر إلكتروني متخصص في بيع مواد الإضاءة الداخلية والخارجية، مع تقديم خدمة هندسية احترافية لتصميم وتوزيع الإضاءة وفق أعلى المعايير الفنية وتجربة شراء سلسة وسريعة.</p>
+            <div class="project-tech-list">
+              <span>HTML5/CSS3</span><span>JavaScript</span><span>UI/UX Design</span><span>Responsive</span><span>E-Commerce Flow</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ra-7-eem.github.io/adeem-light/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_project">زيارة الموقع ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Al Ghzal -->
+        <article class="project-card" data-category="landing corporate" id="project-alghzal">
+          <div class="project-img-wrapper">
+            <img src="Projects/Alghzal.png" alt="Al Ghzal Food Products" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://ra-7-eem.github.io/ALghzal/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_alghzal_badge">شركة ومصنع غذائي</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_alghzal_title">شركة الغزال للمنتجات الغذائية</h3>
+            <p class="project-desc" data-i18n="p_alghzal_desc">موقع تعريفي وتسويقي متكامل لشركة فلسطينية رائدة في تصنيع وتسويق المنتجات الغذائية عالية الجودة، يبرز خطوط الإنتاج والشهادات والقدرات التوزيعية بهوية بصرية مميزة.</p>
+            <div class="project-tech-list">
+              <span>HTML5/CSS3</span><span>JavaScript</span><span>Custom Branding</span><span>Responsive</span><span>Performance Optimized</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ra-7-eem.github.io/ALghzal/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_project">زيارة الموقع ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Fahs Mabani -->
+        <article class="project-card" data-category="landing corporate" id="project-fahsmabani">
+          <div class="project-img-wrapper">
+            <img src="Projects/fahs-mabani.png" alt="Fahs Mabani" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://ra-7-eem.github.io/fahs-mabani/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_fahsmabani_badge">فحص واستشارات هندسية</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_fahsmabani_title">منصة فحص وتقييم المباني</h3>
+            <p class="project-desc" data-i18n="p_fahsmabani_desc">صفحة هبوط تسويقية متقدمة لمهندس فحص منشآت معتمد، مزودة بأحدث نماذج الحجز وعرض التقنيات والأجهزة الحديثة لضمان سلامة المباني والاستثمار العقاري.</p>
+            <div class="project-tech-list">
+              <span>HTML5/CSS3</span><span>JavaScript</span><span>Lead Generation</span><span>UI/UX</span><span>Direct WhatsApp Flow</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ra-7-eem.github.io/fahs-mabani/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_project">زيارة الموقع ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Power Fitness Gym & Dashboard -->
+        <article class="project-card featured-project" data-category="webapps landing" id="project-powerfitness">
+          <div class="project-img-wrapper">
+            <img src="Projects/power-fitness.png" alt="Power Fitness Gym" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://ra-7-eem.github.io/power-fitness/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_powerfitness_badge">تطبيق ويب + لوحة تحكم</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_powerfitness_title">باور فيتنس جيم + لوحة تحكم الأدمن</h3>
+            <p class="project-desc" data-i18n="p_powerfitness_desc">منصة إلكترونية متكاملة لتسجيل عضويات الجيم واختيار الباقات، مع لوحة تحكم أدمن تفاعلية وشاملة لإدارة المشتركين والمدربين والتقارير المالية بكفاءة وسلاسة.</p>
+            <div class="project-tech-list">
+              <span>JavaScript (ES6+)</span><span>Admin Dashboard</span><span>State Management</span><span>Data Visualization</span><span>Responsive UI</span>
+            </div>
+            <div class="project-actions multi-actions">
+              <a href="https://ra-7-eem.github.io/power-fitness/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_gym">موقع الجيم ↗</a>
+              <a href="https://ra-7-eem.github.io/power-fitness/dashboard" target="_blank" rel="noopener" class="project-cta-btn secondary-btn" data-i18n="visit_dashboard">لوحة التحكم ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. ARCADE - Full Stack E-Commerce & Admin ERP -->
+        <article class="project-card featured-project" data-category="ecommerce webapps" id="project-arcade">
+          <div class="project-img-wrapper">
+            <img src="Projects/ARCADE/2.png" alt="ARCADE — Electronics Store & Admin ERP" loading="lazy" />
+            <div class="project-overlay">
+              <button type="button" class="project-preview-btn open-arcade-video" data-i18n="p_arcade_cta">معاينة الموقع ↗</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_arcade_badge">متجر إلكتروني + لوحة إدارة (Full Stack)</span>
+              <span class="project-verified-badge" data-i18n="fullstack_badge">مشروع متكامل (Full Stack)</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_arcade_title">منصة ARCADE | متجر إلكترونيات ولوحة تحكم شاملة</h3>
+            <p class="project-desc" data-i18n="p_arcade_desc">منصة تجارة إلكترونية متكاملة لبيع الإلكترونيات وأجهزة الكمبيوتر مع لوحة تحكم ERP شاملة لإدارة المنتجات، المخزون، الطلبات، والعملاء، مبنية بهندسة برمجية متطورة (Angular 17 + ASP.NET Core 9 + SQL Server).</p>
+            <div class="project-tech-list">
+              <span>Angular 17</span><span>ASP.NET Core 9.0</span><span>MS SQL Server</span><span>JWT Auth</span><span>RESTful API</span><span>Inventory ERP</span><span>Order Workflow</span>
+            </div>
+            <div class="project-actions">
+              <button type="button" class="project-cta-btn open-arcade-gallery" data-i18n="p_arcade_cta">معاينة الموقع ↗</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. MZ Creative -->
+        <article class="project-card" data-category="landing corporate" id="project-mzcreative">
+          <div class="project-img-wrapper">
+            <img src="Projects/mzcreative.png" alt="MZ Creative Agency" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://ra-7-eem.github.io/mzcreative/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_mzcreative_badge">وكالة تصميم داخلي 3D</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_mzcreative_title">وكالة MZ Creative للتصميم الداخلي و3D</h3>
+            <p class="project-desc" data-i18n="p_mzcreative_desc">موقع إلكتروني عصري وفخم لوكالة هندسة داخلية متخصصة في التصميم المعماري ثلاثي الأبعاد وتخطيط المساحات الحديثة، يتميز بمعرض أعمال سينمائي وتجربة تصفح غامرة.</p>
+            <div class="project-tech-list">
+              <span>HTML5/CSS3</span><span>JavaScript</span><span>Cinematic UI</span><span>Image Galleries</span><span>Dark Luxury Aesthetic</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ra-7-eem.github.io/mzcreative/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_project">زيارة الموقع ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. 3ds Max Architectural Course -->
+        <article class="project-card" data-category="landing" id="project-3dsmax">
+          <div class="project-img-wrapper">
+            <img src="Projects/3dsmax.mzcreative.png" alt="3ds Max Course" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://3dsmax.mzcreative.ma/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_3dsmax_badge">صفحة هبوط دورة تدريبية</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_3dsmax_title">دورة التصميم المعماري 3ds Max & V-Ray</h3>
+            <p class="project-desc" data-i18n="p_3dsmax_desc">صفحة هبوط تسويقية مخصصة للتسجيل في دورة حضورية لتعليم التصميم المعماري ثلاثي الأبعاد والـ Rendering بـ 3ds Max و V-Ray، مصممة لرفع معدل التحويل وسرعة التسجيل.</p>
+            <div class="project-tech-list">
+              <span>HTML5/CSS3</span><span>JavaScript</span><span>Conversion Funnel</span><span>Countdown Logic</span><span>Registration Form</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://3dsmax.mzcreative.ma/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_project">زيارة الموقع ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Tamayouz Award -->
+        <article class="project-card" data-category="landing corporate" id="project-tamayouz">
+          <div class="project-img-wrapper">
+            <img src="Projects/tamayouz-award.png" alt="Tamayouz Award" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://ra-7-eem.github.io/tamayouz-award/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_tamayouz_badge">منصة جوائز وتكريم</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_tamayouz_title">جائزة التميز في التدريب والموارد البشرية</h3>
+            <p class="project-desc" data-i18n="p_tamayouz_desc">بوابة رقمية رسمية لجائزة التميز في التدريب وتطوير الموارد البشرية، تتيح للمؤسسات والمدربين الاطلاع على معايير الجائزة، الشروط، وتقديم ملفات الترشح إلكترونياً.</p>
+            <div class="project-tech-list">
+              <span>HTML5/CSS3</span><span>JavaScript</span><span>Corporate UI</span><span>Multi-section Portal</span><span>Responsive Design</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ra-7-eem.github.io/tamayouz-award/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_project">زيارة الموقع ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Bilal Musleh -->
+        <article class="project-card" data-category="landing corporate" id="project-bilal">
+          <div class="project-img-wrapper">
+            <img src="Projects/Bilal-Musleh.png" alt="Bilal Musleh" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://ra-7-eem.github.io/Bilal-Musleh/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_bilal_badge">مطابخ وديكورات خشبية</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_bilal_title">بلال مصلح للمطابخ والديكور الخشبي</h3>
+            <p class="project-desc" data-i18n="p_bilal_desc">موقع تعريفي احترافي يستعرض أعمال تصنيع وتركيب المطابخ والديكورات الخشبية الراقية، مع كتالوج مشاريع مصورة ونماذج تفاعلية لحساب القياسات والتواصل الفوري.</p>
+            <div class="project-tech-list">
+              <span>HTML5/CSS3</span><span>JavaScript</span><span>Custom Gallery</span><span>Interactive Quotes</span><span>RTL/LTR Layout</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ra-7-eem.github.io/Bilal-Musleh/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_project">زيارة الموقع ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Juman -->
+        <article class="project-card" data-category="landing corporate" id="project-juman">
+          <div class="project-img-wrapper">
+            <img src="Projects/Juman.png" alt="Juman Kitchens & Furniture" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://ra-7-eem.github.io/Juman/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_juman_badge">أثاث ومطابخ عصرية</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_juman_title">جمان لتصميم وتصنيع المطابخ والأثاث</h3>
+            <p class="project-desc" data-i18n="p_juman_desc">موقع إلكتروني يعكس هوية شركة جمان في تصميم وتنفيذ الأثاث الداخلي والمطابخ العصرية بأعلى جودة وخامات مستوردة، مدمج به معرض صور فائق الجودة وقنوات طلب مباشرة.</p>
+            <div class="project-tech-list">
+              <span>HTML5/CSS3</span><span>JavaScript</span><span>Modern UI/UX</span><span>Smooth Scroll</span><span>Mobile-First Grid</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ra-7-eem.github.io/Juman/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_project">زيارة الموقع ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. Dr. Asma Clinic -->
+        <article class="project-card featured-project has-gallery" data-category="landing corporate" id="project-drasma">
+          <div class="project-img-wrapper">
+            <div class="project-gallery-slides">
+              <img src="Projects/DrAsma.clinic.png" alt="Dr. Asma Clinic — Page 1" class="project-gallery-img active" loading="lazy" />
+              <img src="Projects/DrAsma.clinic2.png" alt="Dr. Asma Clinic — Page 2" class="project-gallery-img" loading="lazy" />
+            </div>
+            <div class="project-gallery-nav">
+              <button class="gallery-dot active" data-img-idx="0" aria-label="Page 1" title="الصفحة 1"></button>
+              <button class="gallery-dot" data-img-idx="1" aria-label="Page 2" title="الصفحة 2"></button>
+            </div>
+            <div class="project-overlay">
+              <a href="https://ra-7-eem.github.io/DrAsma.clinic/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_drasma_badge">عيادة طب وتجميل أسنان</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_drasma_title">عيادة د. أسماء لتجميل وزراعة الأسنان</h3>
+            <p class="project-desc" data-i18n="p_drasma_desc">صفحة هبوط طبية فاخرة لطبيبة أسنان متخصصة في زراعة الأسنان وتجميل الوجه اللاجراحي، تشمل استعراض حالات العلاج، آراء المراجعين، وحجز مواعيد فوري بنسختين متطورتين.</p>
+            <div class="project-tech-list">
+              <span>HTML5/CSS3</span><span>JavaScript</span><span>Medical UI/UX</span><span>Online Booking</span><span>Dual Layouts</span>
+            </div>
+            <div class="project-actions multi-actions">
+              <a href="https://ra-7-eem.github.io/DrAsma.clinic/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_version1">الصفحة 1 ↗</a>
+              <a href="https://ra-7-eem.github.io/DrAsma.clinic2/" target="_blank" rel="noopener" class="project-cta-btn secondary-btn" data-i18n="visit_version2">الصفحة 2 ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. Smart Catalog & Order System -->
+        <article class="project-card featured-project has-gallery" data-category="ecommerce webapps" id="project-catalog">
+          <div class="project-img-wrapper">
+            <div class="project-gallery-slides">
+              <img src="Projects/catalog.png" alt="Smart Product Catalog — Intro" class="project-gallery-img active" loading="lazy" />
+              <img src="Projects/catalog2.png" alt="Smart Product Catalog — Products & Cart" class="project-gallery-img" loading="lazy" />
+            </div>
+            <div class="project-gallery-nav">
+              <button class="gallery-dot active" data-img-idx="0" aria-label="Intro Screen" title="الواجهة"></button>
+              <button class="gallery-dot" data-img-idx="1" aria-label="Catalog & Cart" title="الكتالوج والسلة"></button>
+            </div>
+            <div class="project-overlay">
+              <a href="https://catalog.page.gd/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_catalog_badge">كتالوج وسلة + لوحة تحكم</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_catalog_title">كتالوج المنتجات الذكي + سلة ولوحة تحكم</h3>
+            <p class="project-desc" data-i18n="p_catalog_desc">منصة تجارة إلكترونية سريعة تتيح تصفح المنتجات وإضافتها للسلة وإرسال الطلبات عبر الواتساب، مع لوحة تحكم أدمن كاملة لإضافة وتعديل المنتجات والأسعار وإدارة المخزون.</p>
+            <div class="project-tech-list">
+              <span>JavaScript (SPA)</span><span>Admin Dashboard</span><span>Shopping Cart Logic</span><span>CRUD Operations</span><span>WhatsApp Checkout</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://catalog.page.gd/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_project">زيارة المنصة ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. OPIS International School -->
+        <article class="project-card" data-category="landing corporate" id="project-opis">
+          <div class="project-img-wrapper">
+            <img src="Projects/opis.png" alt="OPIS International School" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://opis.edu.sa/co/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_opis_badge">صرح تعليمي ودولي</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_opis_title">مدارس رواد المدارات العالمية والأهلية</h3>
+            <p class="project-desc" data-i18n="p_opis_desc">بوابة تعريفية شاملة لمؤسسة تعليمية دولية كبرى، تستعرض البرامج الأكاديمية والمراحل الدراسية والأنشطة والاعتمادات الدولية مع نموذج تسجيل وقبول إلكتروني سلس.</p>
+            <div class="project-tech-list">
+              <span>HTML5/CSS3</span><span>JavaScript</span><span>Educational Portal</span><span>Admission Forms</span><span>Responsive UI</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://opis.edu.sa/co/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_project">زيارة الموقع ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 13. Alkhebrat -->
+        <article class="project-card" data-category="landing corporate" id="project-alkhebrat">
+          <div class="project-img-wrapper">
+            <img src="Projects/alkhebrat.png" alt="Alkhebrat Restaurant Advisory" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://ra-7-eem.github.io/alkhebrat/" target="_blank" rel="noopener" class="project-preview-btn" data-i18n="view_live">معاينة حية ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category-badge" data-i18n="p_alkhebrat_badge">استشارات مالية وتشغيلية</span>
+              <span class="project-verified-badge" data-i18n="client_project">مشروع معتمد ✓</span>
+            </div>
+            <h3 class="project-title" data-i18n="p_alkhebrat_title">مكتب الخبرات المتعددة | استشارات المطاعم</h3>
+            <p class="project-desc" data-i18n="p_alkhebrat_desc">صفحة هبوط تسويقية لمستشار مالي وتشغيلي متخصص في قطاع المطاعم والمقاهي، تركز على كشف الهدر وهيكلة التكاليف وبناء خطط مالية دقيقة تضاعف أرباح المستثمرين.</p>
+            <div class="project-tech-list">
+              <span>HTML5/CSS3</span><span>JavaScript</span><span>Consulting Funnel</span><span>Data Presentation</span><span>Persuasive Copywriting</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ra-7-eem.github.io/alkhebrat/" target="_blank" rel="noopener" class="project-cta-btn" data-i18n="visit_project">زيارة الموقع ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /#projectsGrid -->
+
+    </div>
+  </main>
+
+  <!-- ============================  FOOTER  ============================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="favicon2.png" alt="RD Logo" style="height: 38px; width: auto; display: block; border-radius: 4px;" />
+      </div>
+      <div class="footer-text" dir="ltr">
+        <span class="footer-copy">Raheem Darweesh <span class="copyright-symbol">©</span> 2025</span>
+      </div>
+      <p class="footer-sub">
+        <span class="c-comment">// <span data-i18n="footer_available">متاح لمشاريع العمل الحر</span></span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================  PROJECT SHOWCASE / VIDEO MODAL  ============================ -->
+  <div class="project-modal" id="projectGalleryModal" aria-hidden="true" role="dialog" aria-label="معرض واستعراض المشروع">
+    <div class="project-modal-overlay" id="projectModalOverlay"></div>
+    <div class="project-modal-wrapper">
+      <div class="project-modal-container">
+        
+        <!-- Modal Top Bar -->
+        <div class="project-modal-top">
+          <div class="project-modal-header-info">
+            <div class="project-modal-badges">
+              <span class="project-modal-tag" id="pmTag" data-i18n="arcade_modal_tag">Full Stack Enterprise</span>
+              <div class="project-modal-mode-tabs">
+                <button type="button" class="pm-mode-tab active" id="pmTabVideo">
+                  <span data-i18n="tab_video">استعراض الفيديو ▶</span>
+                </button>
+                <button type="button" class="pm-mode-tab" id="pmTabGallery">
+                  <span data-i18n="tab_screens">صور الواجهات 🖼️</span>
+                </button>
+              </div>
+            </div>
+            <h2 class="project-modal-title" id="pmTitle" data-i18n="arcade_modal_title">منصة ARCADE | متجر إلكترونيات ولوحة تحكم متكاملة</h2>
+          </div>
+          <button type="button" class="project-modal-close" id="projectModalClose" aria-label="إغلاق المعرض">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Video Stage View -->
+        <div class="pm-video-stage" id="pmVideoStage">
+          <div class="pm-video-frame">
+            <iframe id="pmVideoIframe" src="" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+          </div>
+          <div class="pm-video-actions">
+            <a href="https://drive.google.com/file/d/1jtJatQcDNpOSRsGC-Wgm11loa31jvqkb/view?usp=drivesdk" target="_blank" rel="noopener" class="pm-drive-btn" id="pmDriveLink">
+              <span data-i18n="open_in_drive">فتح الفيديو على Google Drive ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Screenshots Gallery Stage View (Hidden when in video mode) -->
+        <div class="project-modal-stage" id="pmGalleryStage" style="display: none;">
+          <button type="button" class="pm-nav-btn pm-prev-btn" id="pmPrevBtn" aria-label="الصورة السابقة">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="pm-image-frame">
+            <img src="Projects/ARCADE/2.png" alt="Screen preview" id="pmMainImage" class="pm-main-image" />
+          </div>
+
+          <button type="button" class="pm-nav-btn pm-next-btn" id="pmNextBtn" aria-label="الصورة التالية">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Caption & Tech Stack Info -->
+        <div class="project-modal-details">
+          <div class="pm-caption-box">
+            <h4 class="pm-screen-title" id="pmScreenTitle">واجهة المتجر الرئيسية (Storefront Home)</h4>
+            <p class="pm-screen-desc" id="pmScreenDesc">استعراض فيديو حي لجميع عمليات الشراء، تصفح الكتالوج، وتحديثات لوحة تحكم الأدمن والـ ERP.</p>
+          </div>
+          <div class="pm-tech-chips" id="pmTechChips">
+            <span>Angular 17</span>
+            <span>ASP.NET Core 9.0</span>
+            <span>MS SQL Server</span>
+            <span>JWT Auth</span>
+            <span>REST API</span>
+          </div>
+        </div>
+
+        <!-- Thumbnails Strip (Only visible in Gallery Mode) -->
+        <div class="pm-thumbnails-bar" id="pmThumbnailsBar" style="display: none;"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
