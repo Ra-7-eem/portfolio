@@ -867,56 +867,56 @@ initPortfolioCarousel();
 // =====================================================
 const arcadeGalleryData = [
   {
-    src: "Projects/ARCADE/2.png",
+    src: "assets/projects/ARCADE/2.png",
     title_ar: "واجهة المتجر الرئيسية (Storefront Home - Build Your Dream Rig)",
     title_en: "Storefront Home - Build Your Dream Rig",
     desc_ar: "الصفحة الرئيسية لمتجر الإلكترونيات وتصفح الأقسام والمكونات الاحترافية.",
     desc_en: "Modern electronics storefront homepage with category navigation and hardware highlights."
   },
   {
-    src: "Projects/ARCADE/1.png",
+    src: "assets/projects/ARCADE/1.png",
     title_ar: "بوابة تسجيل دخول المستخدمين (User Authentication)",
     title_en: "User & Customer Authentication Portal",
     desc_ar: "واجهة تسجيل دخول آمنة للمستخدمين والعملاء مع توثيق JWT وتشفير كلمات المرور.",
     desc_en: "Secure authentication portal for registered shoppers featuring JWT tokens."
   },
   {
-    src: "Projects/ARCADE/3.png",
+    src: "assets/projects/ARCADE/3.png",
     title_ar: "كتالوج المنتجات والفلترة المتقدمة (Products Catalog)",
     title_en: "Products Catalog & Advanced Hardware Filters",
     desc_ar: "استعراض المنتجات مع الفلترة حسب القطع، نطاق الأسعار، التوفر، وإضافة المنتجات للسلة.",
     desc_en: "Filtered hardware catalog with price ranges, stock status, specs, and shopping cart integration."
   },
   {
-    src: "Projects/ARCADE/7.png",
+    src: "assets/projects/ARCADE/7.png",
     title_ar: "إتمام الطلب والدفع الآمن (Secure Checkout)",
     title_en: "Secure Checkout & Order Summary",
     desc_ar: "واجهة الدفع الآمن مع تفاصيل الشحن، ملخص الطلب، وخطوات التأكيد بوضوح.",
     desc_en: "Secure checkout interface with shipping details, order summary, and clear confirmation steps."
   },
   {
-    src: "Projects/ARCADE/4.png",
+    src: "assets/projects/ARCADE/4.png",
     title_ar: "بوابة دخول لوحة إدارة النظام (Admin Portal Login)",
     title_en: "Admin Portal Secure Access",
     desc_ar: "بوابة دخول محصنة ومخصصة لمدراء النظام والتحكم بصلاحيات المسؤولين.",
     desc_en: "Dedicated role-protected administrative access portal."
   },
   {
-    src: "Projects/ARCADE/6.png",
+    src: "assets/projects/ARCADE/6.png",
     title_ar: "لوحة التحكم التنفيذية وإحصائيات المبيعات (Executive Dashboard)",
     title_en: "Executive Admin Dashboard & Live Analytics",
     desc_ar: "لوحة تحكم إدارية شاملة تعرض الإيرادات، حجم الطلبات، المخزون، وتنبيهات النواقص.",
     desc_en: "Full admin ERP dashboard displaying total revenue, orders, active inventory, and status charts."
   },
   {
-    src: "Projects/ARCADE/8.png",
+    src: "assets/projects/ARCADE/8.png",
     title_ar: "لوحة التحكم - الطلبات الحديثة (Orders Management)",
     title_en: "Admin Dashboard - Recent Orders & Alerts",
     desc_ar: "نظرة عامة على الطلبات الحديثة، حالة الطلبات، وتنبيهات المنتجات منخفضة المخزون.",
     desc_en: "Overview of recent orders, real-time status charts, and low stock alerts."
   },
   {
-    src: "Projects/ARCADE/9.png",
+    src: "assets/projects/ARCADE/9.png",
     title_ar: "إدارة المخزون وتحديث الكميات (Inventory Management)",
     title_en: "Inventory Management & Stock Health",
     desc_ar: "واجهة مخصصة لمراقبة حالة المخزون، تحديث الكميات بسرعة، وتتبع نواقص المنتجات.",
