@@ -28,7 +28,6 @@ const TRANSLATIONS = {
     stat_projects: "مشروع منجز",
     stat_satisfaction: "رضا العملاء",
     stat_clients: "عميل سعيد",
-    scroll_down: "مرر للأسفل",
     about_title: "عني",
     about_title2: "أنا",
     about_subtitle: "المهندس اللي وراء الكود",
@@ -80,8 +79,6 @@ const TRANSLATIONS = {
     visit_dashboard: "لوحة التحكم ↗",
     visit_version1: "الصفحة 1 ↗",
     visit_version2: "الصفحة 2 ↗",
-    show_all_projects: "عرض جميع المشاريع (14)",
-    show_less_projects: "عرض أقل",
     view_all_projects_btn: "عرض جميع الأعمال",
     projects_page_title1: "أعمال تروي",
     projects_page_title2: "قصص التميّز والنجاح",
@@ -91,7 +88,6 @@ const TRANSLATIONS = {
     fullstack_badge: "مشروع متكامل (Full Stack)",
     review_verified: "تقييم موثق على خمسات ✓",
     view_khamsat_review: "عرض التقييم في خمسات",
-    view_screens_btn: "معاينة الموقع ↗",
     tab_video: "استعراض الفيديو ▶",
     tab_screens: "صور الواجهات",
     open_in_drive: "فتح الفيديو على Google Drive ↗",
@@ -101,17 +97,6 @@ const TRANSLATIONS = {
     usp4: "تصميم يعكس هوية مشروعك",
     usp5: "دعم وتواصل مستمر",
     usp6: "Full Stack من الفكرة للإطلاق",
-    usp_title1: "لماذا",
-    usp_title2: "أنا؟",
-    usp_subtitle: "أنا لا أقدم فقط كوداً، بل أقدم تجربة رقمية متكاملة تجعل مشروعك لا يُنسى",
-    usp_card1_title: "هندسة برمجية احترافية",
-    usp_card1_desc: "كود نظيف، قابل للتوسعة، ومبني على أفضل معايير الصناعة — وليس مجرد كود \"يشتغل\".",
-    usp_card2_title: "التسليم في الموعد",
-    usp_card2_desc: "أحترم وقتك تماماً كما أحترم جودة عملي — المواعيد النهائية ليست اقتراحات بل التزامات.",
-    usp_card3_title: "تصميم يعكس هويتك",
-    usp_card3_desc: "كل مشروع له شخصية مستقلة — أبني تجربة بصرية مخصصة تعكس قيمة علامتك التجارية.",
-    usp_card4_title: "تواصل مستمر وشفاف",
-    usp_card4_desc: "ستكون على اطلاع دائم بكل خطوة — لا غموض، لا مفاجآت، فقط شراكة حقيقية وتواصل صريح.",
     p_arcade_title: "منصة ARCADE | متجر إلكترونيات ولوحة تحكم شاملة",
     p_arcade_badge: "متجر إلكتروني + لوحة إدارة (Full Stack)",
     p_arcade_desc: "منصة تجارة إلكترونية متكاملة لبيع الإلكترونيات وأجهزة الكمبيوتر مع لوحة تحكم ERP شاملة لإدارة المنتجات، المخزون، الطلبات، والعملاء، مبنية بهندسة برمجية متطورة (Angular 17 + ASP.NET Core 9 + SQL Server).",
@@ -160,12 +145,6 @@ const TRANSLATIONS = {
     test_title: "آراء",
     test_title2: "العملاء",
     test_subtitle: "تقييمات حقيقية من مشاريع حقيقية",
-    t1_quote: '"رحيم سلّم نظام الامتحانات الأونلاين بالضبط زي ما طلبت — في الوقت المحدد ومع اهتمام رائع بالتفاصيل. الحل كان مبتكر واشتغل بشكل مثالي. موصى به جداً!"',
-    t1_name: "أحمد حسن", t1_role: "عميل — مشروع الامتحانات",
-    t2_quote: '"مطور محترف جداً ومتواصل. رحيم فهم متطلبات المشروع من أول محادثة وسلّم كود نظيف ومنظم. هشتغل معه أكيد تاني."',
-    t2_name: "سارة محمد", t2_role: "صاحبة مشروع",
-    t3_quote: '"شغل رائع! الـ API اللي بناها رحيم لنظامنا سريعة وموثّقة وسهلة التكامل. محترف حقيقي عارف حرفته كويس جداً في .NET."',
-    t3_name: "خالد عمر", t3_role: "مؤسس شركة ناشئة",
     contact_title: "هيا نشتغل",
     contact_title2: "مع بعض",
     contact_subtitle: "عندك مشروع في بالك؟ هيا نبني حاجة عظيمة.",
@@ -202,7 +181,6 @@ const TRANSLATIONS = {
     stat_projects: "Projects Done",
     stat_satisfaction: "Client Satisfaction",
     stat_clients: "Happy Clients",
-    scroll_down: "Scroll Down",
     about_title: "About",
     about_title2: "Me",
     about_subtitle: "The engineer behind the code",
@@ -254,8 +232,6 @@ const TRANSLATIONS = {
     visit_dashboard: "Admin Panel ↗",
     visit_version1: "Page 1 ↗",
     visit_version2: "Page 2 ↗",
-    show_all_projects: "Show All Projects (14)",
-    show_less_projects: "Show Less",
     view_all_projects_btn: "View All Projects",
     projects_page_title1: "Projects That Tell",
     projects_page_title2: "Stories of Excellence & Success",
@@ -265,7 +241,6 @@ const TRANSLATIONS = {
     fullstack_badge: "Full Stack Project",
     review_verified: "Verified Khamsat Review ✓",
     view_khamsat_review: "View Review on Khamsat",
-    view_screens_btn: "Preview Website ↗",
     tab_video: "Video Walkthrough ▶",
     tab_screens: "UI Screenshots",
     open_in_drive: "Open Video on Google Drive ↗",
@@ -275,17 +250,6 @@ const TRANSLATIONS = {
     usp4: "Design That Reflects Your Brand",
     usp5: "Continuous Support & Communication",
     usp6: "Full Stack — Idea to Launch",
-    usp_title1: "Why",
-    usp_title2: "Me?",
-    usp_subtitle: "I don't just deliver code — I deliver a complete digital experience that makes your project unforgettable",
-    usp_card1_title: "Professional Engineering",
-    usp_card1_desc: "Clean, scalable code built on industry best practices — not just code that \"works\".",
-    usp_card2_title: "On-Time Delivery",
-    usp_card2_desc: "I respect your time as much as I respect my craft — deadlines are commitments, not suggestions.",
-    usp_card3_title: "Design That Reflects You",
-    usp_card3_desc: "Every project has its own identity — I craft a bespoke visual experience that reflects your brand's true value.",
-    usp_card4_title: "Transparent Communication",
-    usp_card4_desc: "You'll always know what's happening — no ambiguity, no surprises, just a real partnership built on honesty.",
     p_arcade_title: "ARCADE Platform | Electronics Store & Complete Admin ERP",
     p_arcade_badge: "E-Commerce + Admin ERP (Full Stack)",
     p_arcade_desc: "A full-stack e-commerce & administrative management platform for electronics, featuring live sales metrics, low-stock warnings, order lifecycle tracking, and JWT-secured role authentication (Angular 17 + ASP.NET Core 9 + SQL Server).",
@@ -334,12 +298,6 @@ const TRANSLATIONS = {
     test_title: "What Clients",
     test_title2: "Say",
     test_subtitle: "Real feedback from real projects",
-    t1_quote: '"Raheem delivered the online exam system exactly as requested — on time and with excellent attention to detail. The solution was innovative and worked perfectly. Highly recommended!"',
-    t1_name: "Ahmed Hassan", t1_role: "Client — Online Exam Project",
-    t2_quote: '"Very professional and communicative developer. Raheem understood the project requirements from the first conversation and delivered clean, well-organized code. I\'ll definitely work with him again."',
-    t2_name: "Sara Mohamed", t2_role: "Business Owner",
-    t3_quote: '"Outstanding work! The API Raheem built for our system is fast, well-documented, and easy to integrate with. He\'s a true professional who really knows his craft with .NET."',
-    t3_name: "Khaled Omar", t3_role: "Startup Founder",
     contact_title: "Let's Work",
     contact_title2: "Together",
     contact_subtitle: "Have a project in mind? Let's build something great.",
@@ -365,7 +323,6 @@ const TRANSLATIONS = {
 // APP STATE
 // =====================================================
 let currentLang = 'en';
-let currentTheme = 'dark';
 let typedPhraseIndex = 0;
 let typedCharIndex = 0;
 let typedDeleting = false;
@@ -643,7 +600,7 @@ restartTyped();
 // 6. SCROLL REVEAL
 // =====================================================
 (function initReveal() {
-  const els = document.querySelectorAll('.services-stage, .section-header, .project-card, .testimonial-card, .about-grid > *, .contact-grid > *');
+  const els = document.querySelectorAll('.services-stage, .section-header, .project-card, .testimonials-stage, .about-grid > *, .contact-grid > *');
   els.forEach(el => el.classList.add('reveal'));
   const observer = new IntersectionObserver(entries => {
     entries.forEach((entry, i) => {
@@ -1253,85 +1210,26 @@ window.addEventListener('scroll', () => {
 
 
 // =====================================================
-// 11. CURSOR TRAIL & MOBILE TOUCH INTERACTION
+// 11. DESKTOP CURSOR TRAIL (Only on devices with fine pointer / mouse)
 // =====================================================
 (function () {
-  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-  
-  // 1. Desktop Cursor Trail (disabled on touch devices)
-  if (!isTouchDevice) {
-    const trail = [];
-    for (let i = 0; i < 10; i++) {
-      const dot = document.createElement('div');
-      dot.className = 'cursor-trail-dot';
-      dot.style.cssText = `position:fixed;width:${4 + i * .5}px;height:${4 + i * .5}px;border-radius:50%;background:rgba(0,255,136,${.6 - i * .05});pointer-events:none;z-index:9999;transition:all ${.05 + i * .02}s linear;transform:translate(-50%,-50%);`;
-      document.body.appendChild(dot);
-      trail.push(dot);
-    }
-    document.addEventListener('mousemove', e => {
-      trail.forEach(d => {
-        d.style.left = e.clientX + 'px';
-        d.style.top = e.clientY + 'px';
-      });
+  const hasFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (!hasFinePointer) return;
+
+  const trail = [];
+  for (let i = 0; i < 10; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'cursor-trail-dot';
+    dot.style.cssText = `position:fixed;width:${4 + i * 0.5}px;height:${4 + i * 0.5}px;border-radius:50%;background:rgba(0,255,136,${0.6 - i * 0.05});pointer-events:none;z-index:9999;transition:all ${0.05 + i * 0.02}s linear;transform:translate(-50%,-50%);`;
+    document.body.appendChild(dot);
+    trail.push(dot);
+  }
+  document.addEventListener('mousemove', e => {
+    trail.forEach(d => {
+      d.style.left = e.clientX + 'px';
+      d.style.top = e.clientY + 'px';
     });
-  }
-
-  // 2. Mobile Touch Sparkles
-  if (isTouchDevice) {
-    document.addEventListener('touchmove', e => {
-      const touch = e.touches[0];
-      createSparkle(touch.clientX, touch.clientY);
-    }, { passive: true });
-
-    document.addEventListener('touchstart', e => {
-      const touch = e.touches[0];
-      // Create a small burst of 3 sparkles on tap
-      for (let i = 0; i < 3; i++) {
-        createSparkle(touch.clientX, touch.clientY);
-      }
-    }, { passive: true });
-  }
-
-  function createSparkle(x, y) {
-    const sparkle = document.createElement('div');
-    sparkle.className = 'touch-sparkle';
-    
-    // Random offset, size, and direction
-    const size = Math.random() * 8 + 4;
-    const angle = Math.random() * Math.PI * 2;
-    const velocity = Math.random() * 25 + 5;
-    const dx = Math.cos(angle) * velocity;
-    const dy = Math.sin(angle) * velocity;
-    
-    sparkle.style.cssText = `
-      position: fixed;
-      left: ${x}px;
-      top: ${y}px;
-      width: ${size}px;
-      height: ${size}px;
-      border-radius: 50%;
-      background: radial-gradient(circle, var(--accent-green) 0%, rgba(0, 207, 255, 0.8) 100%);
-      box-shadow: 0 0 10px var(--accent-green);
-      pointer-events: none;
-      z-index: 10000;
-      transform: translate(-50%, -50%);
-      transition: transform 0.6s cubic-bezier(0.1, 0.8, 0.3, 1), opacity 0.6s ease;
-      opacity: 0.8;
-    `;
-    
-    document.body.appendChild(sparkle);
-    
-    // Force reflow
-    sparkle.getBoundingClientRect();
-    
-    // Animate
-    sparkle.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) scale(0)`;
-    sparkle.style.opacity = '0';
-    
-    setTimeout(() => {
-      sparkle.remove();
-    }, 600);
-  }
+  }, { passive: true });
 })();
 
 // =====================================================
@@ -2081,8 +1979,6 @@ function initTestimonialsSlider() {
 // 13. INIT — Load saved preferences
 // =====================================================
 (function init() {
-  document.body.classList.remove('light-theme');
-  localStorage.removeItem('portfolio-theme');
   const savedLang = localStorage.getItem('portfolio-lang') || 'en';
   applyTranslations(savedLang);
   currentLang = savedLang;
